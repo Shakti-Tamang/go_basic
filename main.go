@@ -1,5 +1,9 @@
 package main
 
+// go run hello.go → This command compiles and runs only the hello.go file. Go creates a temporary binary from hello.go and executes it immediately. After execution, the binary is deleted.
+
+// go run . → This command compiles and runs all Go files in the current directory that belong to the main package. It’s used when your program has multiple .go files working together.
+
 // COMMANDS:
 
 // go mod init goprac
@@ -33,3 +37,13 @@ func main() {
 // Without a module, Go doesn’t know which files belong together.
 
 // That’s why it shows:
+
+// Why You Should Use Go Modules
+
+// Dependency Management: Gin and other libraries are installed via modules.
+
+// Version Control: Modules allow you to specify exact versions of packages.
+
+// Project Structure: Makes your project self-contained and reproducible.
+
+// Required for Modern Go: Since Go 1.16+, modules are the standard way to manage dependencies.
