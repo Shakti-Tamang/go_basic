@@ -47,9 +47,12 @@ var (
 )
 
 func main() {
+
 	logMessage("Application starting")
 	requestHandler()
 	logMessage("Application ending")
+	anu := "Shakti"
+	fmt.Println("Name:", anu)
 
 	var b = sum(1, 2)
 	fmt.Println("Sum:", b)
@@ -57,6 +60,24 @@ func main() {
 	details()
 
 	displayDatas()
+
+	const roll int = 60
+	fmt.Println("Value of as:", roll)
+
+	// In Go, the := syntax is called short variable declaration
+
+	// 	This declares a new variable and assigns a value at the same time.
+
+	// Go automatically infers the type from the value.
+
+	// Works only inside functions, not at the package level.
+
+	name := "shakti"
+
+	userage := 25
+
+	fmt.Println("Name:", name)
+	fmt.Println("Age:", userage)
 
 }
 
