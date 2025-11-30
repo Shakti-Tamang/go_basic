@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 // go run hello.go → This command compiles and runs only the hello.go file. Go creates a temporary binary from hello.go and executes it immediately. After execution, the binary is deleted.
 
 // go run . → This command compiles and runs all Go files in the current directory that belong to the main package. It’s used when your program has multiple .go files working together.
@@ -26,10 +28,38 @@ package main
 
 // Where to find dependencies
 
+const (
+	a = 10
+
+	role = "admin"
+
+	isverified = true
+
+	salary = 45000.50
+)
+
 func main() {
 	logMessage("Application starting")
 	requestHandler()
 	logMessage("Application ending")
+
+	var b = sum(1, 2)
+	fmt.Println("Sum:", b)
+
+	details()
+
+}
+
+func details() {
+
+	fmt.Println("Role:", role)
+
+	fmt.Println("Is Verified:", isverified)
+	fmt.Println("Salary:", salary)
+}
+
+func sum(a int, b int) int {
+	return a + b
 }
 
 // Go needs a module (a go.mod file) because it needs to know which folder is your project and how to manage multiple files and packages.
