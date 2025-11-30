@@ -38,6 +38,14 @@ const (
 	salary = 45000.50
 )
 
+var (
+	b int
+	c string
+	d bool
+	e float64
+	f int16
+)
+
 func main() {
 	logMessage("Application starting")
 	requestHandler()
@@ -47,6 +55,8 @@ func main() {
 	fmt.Println("Sum:", b)
 
 	details()
+
+	displayDatas()
 
 }
 
@@ -60,6 +70,20 @@ func details() {
 
 func sum(a int, b int) int {
 	return a + b
+}
+
+func displayDatas() {
+
+	b = 345
+	c = "Shakti"
+	d = true
+	e = 45.67
+	f = 1234
+	fmt.Println("Integer:", b)
+	fmt.Println("String:", c)
+	fmt.Println("Boolean:", d)
+	fmt.Println("Float64:", e)
+	fmt.Println("Int16:", f)
 }
 
 // Go needs a module (a go.mod file) because it needs to know which folder is your project and how to manage multiple files and packages.
