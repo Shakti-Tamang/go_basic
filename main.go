@@ -2,6 +2,8 @@ package main
 
 import "fmt"
 
+// Go is a statically typed, compiled, and concurrent programming language designed by Google. It emphasizes simplicity, performance, and efficient handling of modern systems programming tasks.
+
 // THERE IS GO COMPILER TO CIMPLE GO TO BINARY AND RUN IT
 
 // go run hello.go → This command compiles and runs only the hello.go file. Go creates a temporary binary from hello.go and executes it immediately. After execution, the binary is deleted.
@@ -66,7 +68,24 @@ func main() {
 
 	displayDatas()
 
-	const roll int = 60
+	// 	"Type inferred as int at compile time" means:
+
+	// Type inferred
+
+	// You did not explicitly write the type, or even if you did, Go knows the type from the value you assign.
+
+	// Go automatically figures out the type from the value.
+
+	// int
+
+	// Go determined that the type of the value 60 is an integer (int).
+
+	// At compile time
+
+	// This happens while compiling the code, not at runtime.
+
+	const roll int = 60 // Type inferred as int at compile time
+
 	fmt.Println("Value of as:", roll)
 
 	// In Go, the := syntax is called short variable declaration
