@@ -1,5 +1,9 @@
 package main
 
+// COMMANDS:
+
+// go mod init goprac
+
 // go run .
 
 // Since Go 1.11, Go uses modules to manage projects and dependencies.
