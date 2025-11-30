@@ -49,6 +49,7 @@ var (
 
 	// FG  :=70  cannot work in package level
 )
+var increamets = 9
 
 func main() {
 
@@ -88,6 +89,8 @@ func main() {
 	fmt.Println("Name:", name)
 	fmt.Println("Age:", userage)
 
+	increment()
+
 }
 
 func details() {
@@ -114,6 +117,11 @@ func displayDatas() {
 	fmt.Println("Boolean:", d)
 	fmt.Println("Float64:", e)
 	fmt.Println("Int16:", f)
+}
+
+func increment() {
+	increamets++
+	fmt.Println("Incremented Value:", increamets)
 }
 
 // Go needs a module (a go.mod file) because it needs to know which folder is your project and how to manage multiple files and packages.
