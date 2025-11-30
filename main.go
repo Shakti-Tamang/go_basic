@@ -2,6 +2,8 @@ package main
 
 import "fmt"
 
+// THERE IS GO COMPILER TO CIMPLE GO TO BINARY AND RUN IT
+
 // go run hello.go → This command compiles and runs only the hello.go file. Go creates a temporary binary from hello.go and executes it immediately. After execution, the binary is deleted.
 
 // go run . → This command compiles and runs all Go files in the current directory that belong to the main package. It’s used when your program has multiple .go files working together.
@@ -75,6 +77,10 @@ func main() {
 	// Works only inside functions, not at the package level.
 
 	// Go infers the type automatically, so you don’t need to write int, string, etc.
+
+	// it is only for variable declaration and initialization.
+
+	// You can’t use := for constants; use const instead.
 	name := "shakti"
 
 	userage := 25
