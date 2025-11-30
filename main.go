@@ -44,6 +44,8 @@ var (
 	d bool
 	e float64
 	f int16
+
+	// FG  :=70  cannot work in package level
 )
 
 func main() {
@@ -72,6 +74,7 @@ func main() {
 
 	// Works only inside functions, not at the package level.
 
+	// Go infers the type automatically, so you don’t need to write int, string, etc.
 	name := "shakti"
 
 	userage := 25
