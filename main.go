@@ -132,6 +132,14 @@ func sum(a int, b int) int {
 	return a + b
 }
 
+func getBooleanValue(name string) bool {
+
+	if name == "shakti" {
+		return true
+	}
+
+	return false
+}
 func displayDatas() {
 
 	b = 345
