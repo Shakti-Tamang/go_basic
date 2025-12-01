@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 // Go is a statically typed, compiled, and concurrent programming language designed by Google. It emphasizes simplicity, performance, and efficient handling of modern systems programming tasks.
 
@@ -33,13 +36,10 @@ import "fmt"
 // Where to find dependencies
 
 const (
-	a = 10
-
-	role = "admin"
-
+	a          = 10
+	role       = "admin"
 	isverified = true
-
-	salary = 45000.50
+	salary     = 45000.50
 )
 
 var (
@@ -55,12 +55,20 @@ var increamets = 9
 
 func main() {
 
+	increamets = 50
+
 	logMessage("Application starting")
 	requestHandler()
 	logMessage("Application ending")
-	anu := "Shakti"
+	anu := strings.ToUpper("shakti")
 	fmt.Println("Name:", anu)
 
+	// it is variable
+
+	// short variable declaration
+	at := "amu"
+	at = "saman"
+	fmt.Println("at:", at)
 	var b = sum(1, 2)
 	fmt.Println("Sum:", b)
 
