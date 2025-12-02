@@ -118,6 +118,10 @@ func main() {
 
 	increment()
 
+	bool := getBooleanValue("shakti")
+
+	fmt.Println("Boolean Value:", bool)
+
 }
 
 func details() {
@@ -132,6 +136,16 @@ func sum(a int, b int) int {
 	return a + b
 }
 
+func getBooleanValue(name string) bool {
+
+	if name == "shakti" {
+		return true
+	}
+
+	// return strings.EqualFold(name, "shakti")
+
+	return false
+}
 func displayDatas() {
 
 	b = 345
