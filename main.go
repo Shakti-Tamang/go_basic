@@ -49,6 +49,8 @@ var (
 	e float64
 	f int16
 
+	uname string
+
 	// FG  :=70  cannot work in package level
 )
 var increamets = 9
@@ -118,7 +120,10 @@ func main() {
 
 	increment()
 
-	bool := getBooleanValue("shakti")
+	fmt.Println("enter the name")
+
+	fmt.Scan(&uname)
+	bool := getBooleanValue(uname)
 
 	fmt.Println("Boolean Value:", bool)
 
