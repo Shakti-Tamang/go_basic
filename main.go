@@ -122,7 +122,15 @@ func main() {
 
 	fmt.Println("enter the name")
 
-	fmt.Scan(&uname)
+	// 	&name means “the memory address of the variable name”.
+
+	// In Go, this is called a pointer.
+
+	// 	A pointer is a variable that stores the address of another variable in memory.
+
+	// Instead of storing the actual value, it stores where the value is located.
+
+	fmt.Scan(&uname) // &name → pass pointer
 	bool := getBooleanValue(uname)
 
 	fmt.Println("Boolean Value:", bool)
