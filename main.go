@@ -43,12 +43,12 @@ const (
 )
 
 var (
-	b int
-	c string
-	d bool
-	e float64
-	f int16
-
+	b     int
+	c     string
+	d     bool
+	e     float64
+	f     int16
+	uage  int
 	uname string
 
 	// FG  :=70  cannot work in package level
@@ -131,9 +131,12 @@ func main() {
 	// Instead of storing the actual value, it stores where the value is located.
 
 	fmt.Scan(&uname) // &name → pass pointer
+	fmt.Scan()
+	fmt.Println("enter the age")
+	fmt.Scan(&uage)
 	bool := getBooleanValue(uname)
 
-	fmt.Println("Boolean Value:", bool)
+	fmt.Println("Boolean Value:", bool, "\t", uage)
 
 }
 
