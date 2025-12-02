@@ -145,6 +145,16 @@ func main() {
 
 	fmt.Println("Boolean Value:", bool, "\t", uage)
 
+	var total = displayVariadic(1, 2, 3, 4, 5)
+	fmt.Println("Total Sum:", total)
+
+	anonFunc("Hello from Anonymous Function")
+
+	c := counter()
+
+	fmt.Println("Counter Value:", c())
+
+	fmt.Println("Counter Value:", c())
 }
 
 func details() {
