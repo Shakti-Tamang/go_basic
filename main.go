@@ -118,6 +118,10 @@ func main() {
 
 	increment()
 
+	bool := getBooleanValue("shakti")
+
+	fmt.Println("Boolean Value:", bool)
+
 }
 
 func details() {
@@ -137,6 +141,8 @@ func getBooleanValue(name string) bool {
 	if name == "shakti" {
 		return true
 	}
+
+	// return strings.EqualFold(name, "shakti")
 
 	return false
 }
