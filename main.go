@@ -100,6 +100,12 @@ func main() {
 
 	// In Go, the := syntax is called short variable declaration
 
+	// 	It’s called a “short variable declaration” because it combines two things in a single, short syntax:
+
+	// Declaring a new variable
+
+	// Assigning it a value
+
 	// 	This declares a new variable and assigns a value at the same time.
 
 	// Go automatically infers the type from the value.
@@ -133,6 +139,7 @@ func main() {
 	fmt.Scan(&uname) // &name → pass pointer
 	fmt.Scan()
 	fmt.Println("enter the age")
+
 	fmt.Scan(&uage)
 	bool := getBooleanValue(uname)
 
