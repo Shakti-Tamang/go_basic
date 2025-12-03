@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"goprac/array"
+	"goprac/pracstring"
 	"goprac/structgo"
 	"strings"
 )
@@ -180,6 +181,8 @@ func main() {
 	}
 
 	fmt.Println(p.NameJob())
+
+	pracstring.StringPrac()
 
 }
 
