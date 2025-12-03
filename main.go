@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"goprac/array"
 	"strings"
 )
 
@@ -155,6 +156,8 @@ func main() {
 	fmt.Println("Counter Value:", c())
 
 	fmt.Println("Counter Value:", c())
+
+	array.DisplayArray()
 }
 
 func details() {
