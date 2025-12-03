@@ -1,6 +1,9 @@
 package array
 
-import "fmt"
+import (
+	"fmt"
+	"sort"
+)
 
 func DisplayArray() {
 	fmt.Println("Array Elements:")
@@ -68,7 +71,7 @@ func BuildArrayFucntions() {
 	var array []int
 
 	// Adding/Removing elements:
-	array = append(array, 10, 23, 23, 23, 23)
+	array = append(array, 12, 11, 7, 14, 23)
 
 	// removing
 
@@ -78,6 +81,12 @@ func BuildArrayFucntions() {
 
 	fmt.Println("Last Element:", last)
 
+	sort.Ints(array)
+
 	fmt.Println("Array in function:", array)
+
+	fmt.Println("length", len(array))
+
+	fmt.Println("capacity", cap(array))
 
 }
