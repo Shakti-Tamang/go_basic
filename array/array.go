@@ -12,6 +12,10 @@ func PracArray() {
 	// slice in its nto array
 	var a []int
 
+	// size zero we cannot keep
+	// This declares a slice, not an array.
+
+	// Right now, it’s a nil slice — no memory is allocated yet for elements.
 	a = []int{10, 20, 30, 40, 50}
 
 	a = append(a, 2)
@@ -37,5 +41,11 @@ func PracArray() {
 	}
 
 	fmt.Println("Array Elements:", arr)
+
+	// inferred length array:
+
+	arr2 := [...]string{"Go", "Python", "Java", "C++", "JavaScript"}
+
+	fmt.Println("Inferred Length Array Elements:", arr2)
 
 }
