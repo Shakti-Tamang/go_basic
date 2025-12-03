@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"goprac/array"
+	"goprac/structgo"
 	"strings"
 )
 
@@ -168,6 +169,8 @@ func main() {
 	array.PracArray()
 
 	array.BuildArrayFucntions()
+
+	structgo.StructSimple()
 }
 
 func details() {
