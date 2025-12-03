@@ -3,6 +3,7 @@ package array
 import (
 	"fmt"
 	"sort"
+	"time"
 )
 
 func DisplayArray() {
@@ -11,6 +12,8 @@ func DisplayArray() {
 }
 
 func PracArray() {
+
+	fmt.Println("Array Practice:", time.Now().Weekday())
 
 	// slice in its nto array
 	var a []int
@@ -38,6 +41,7 @@ func PracArray() {
 
 		fmt.Println("Array Element at index", _num, "is", arr[_num])
 	}
+
 	for i := 0; i < len(arr); i++ {
 		fmt.Println("Array Element at index", i, "is", arr[i])
 
