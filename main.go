@@ -158,6 +158,8 @@ func main() {
 	fmt.Println("Counter Value:", c())
 
 	array.DisplayArray()
+
+	array.PracArray()
 }
 
 func details() {
