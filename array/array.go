@@ -52,11 +52,23 @@ func PracArray() {
 
 	// it is slice with short value initlization
 	arr3 := []int{1, 2, 3, 4, 5}
+	// mutable array
+	arr3[3] = 100
 	fmt.Println("Slice Elements:", arr3)
 
 	// short value intilization of array
 
 	arr4 := [5]int{1, 2, 3, 4, 5}
 	fmt.Println("Short Value Initialization Array Elements:", arr4)
+
+}
+
+func BuildArrayFucntions() {
+
+	var array []int
+
+	array = append(array, 10, 23, 23, 23, 23)
+
+	fmt.Println("Array in function:", array)
 
 }
