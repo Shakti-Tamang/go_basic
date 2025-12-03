@@ -171,6 +171,16 @@ func main() {
 	array.BuildArrayFucntions()
 
 	structgo.StructSimple()
+	p := structgo.Person{
+		Name:          "Alice",
+		Age:           25,
+		Salary:        5000,
+		Job:           "Developer",
+		MaritalStatus: false,
+	}
+
+	fmt.Println(p.NameJob())
+
 }
 
 func details() {
