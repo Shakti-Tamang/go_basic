@@ -60,6 +60,10 @@ func main() {
 
 	increamets = 50
 
+	var shakti = "name"
+
+	fmt.Println("shakti:", shakti)
+
 	logMessage("Application starting")
 	requestHandler()
 	logMessage("Application ending")
