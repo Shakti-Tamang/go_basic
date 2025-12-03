@@ -67,7 +67,16 @@ func BuildArrayFucntions() {
 
 	var array []int
 
+	// Adding/Removing elements:
 	array = append(array, 10, 23, 23, 23, 23)
+
+	// removing
+
+	array = array[:len(array)-1] // removes last element
+
+	last := array[len(array)-1]
+
+	fmt.Println("Last Element:", last)
 
 	fmt.Println("Array in function:", array)
 
