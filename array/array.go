@@ -14,7 +14,9 @@ func PracArray() {
 
 	a = []int{10, 20, 30, 40, 50}
 
-	fmt.Println("Array Elements:", a[0])
+	a = append(a, 2)
+
+	fmt.Println("Array Elements:", a)
 
 	var arr [7]int
 	arr[0] = 100
@@ -24,6 +26,11 @@ func PracArray() {
 	arr[4] = 500
 	arr[5] = 600
 	arr[6] = 700
+
+	for _num := range arr {
+
+		fmt.Println("Array Element at index", _num, "is", arr[_num])
+	}
 
 	fmt.Println("Array Elements:", arr)
 
