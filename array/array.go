@@ -43,9 +43,20 @@ func PracArray() {
 	fmt.Println("Array Elements:", arr)
 
 	// inferred length array:
+	// it isdifferent from slice cause it size is fied upto data kept here
 
+	// we cannot append
 	arr2 := [...]string{"Go", "Python", "Java", "C++", "JavaScript"}
 
 	fmt.Println("Inferred Length Array Elements:", arr2)
+
+	// it is slice with short value initlization
+	arr3 := []int{1, 2, 3, 4, 5}
+	fmt.Println("Slice Elements:", arr3)
+
+	// short value intilization of array
+
+	arr4 := [5]int{1, 2, 3, 4, 5}
+	fmt.Println("Short Value Initialization Array Elements:", arr4)
 
 }
