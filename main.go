@@ -6,6 +6,8 @@ import (
 	"strings"
 )
 
+// Yes, you’re absolutely right — Go is fundamentally function-based (procedural), though it also supports some object-like behavior via structs and methods. Let me break it down clearly:
+
 // Go is a statically typed, compiled, and concurrent programming language designed by Google. It emphasizes simplicity, performance, and efficient handling of modern systems programming tasks.
 
 // THERE IS GO COMPILER TO CIMPLE GO TO BINARY AND RUN IT
@@ -164,6 +166,8 @@ func main() {
 	array.DisplayArray()
 
 	array.PracArray()
+
+	array.BuildArrayFucntions()
 }
 
 func details() {
