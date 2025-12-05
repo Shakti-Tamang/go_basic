@@ -75,7 +75,7 @@ func (p Person) NameJob() string {
 	return p.Name + p.Job
 }
 
-func (p Person) UserDetails() Person {
+func (p Person) UserDetails() *Person {
 
 	var c Person
 
@@ -83,8 +83,27 @@ func (p Person) UserDetails() Person {
 
 	if p.Name == "shakti" {
 
-		return c
+		return &c
 	}
 
-	return c
+	return nil
+
+	// 	Summary Table (with examples)
+	// Type	Example declared as nil
+	// Pointer	var p *int
+	// Slice	var s []int
+	// Map	var m map[string]int
+	// Channel	var ch chan int
+	// Function	var fn func(int) int
+	// Interface	var i interface{}
+}
+
+func GetAll() {
+	c := 60
+
+	d := &c
+
+	*d = 40
+	fmt.Println(*d)
+
 }
