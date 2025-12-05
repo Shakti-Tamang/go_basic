@@ -184,6 +184,8 @@ func main() {
 
 	pracstring.StringPrac()
 
+	fmt.Println(p.UserDetails())
+
 }
 
 func details() {
