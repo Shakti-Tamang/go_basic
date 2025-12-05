@@ -2,10 +2,22 @@ package pointerprac
 
 import "fmt"
 
+type Student struct {
+	Name string
+
+	Address string
+
+	Roll string
+
+	ContactNumber string
+}
+
 var (
 	a *int
 
 	b *int
+
+	c []*int
 )
 
 func GetPointerValue() {
@@ -25,4 +37,5 @@ func GetPointerValue() {
 	fmt.Println(c)
 
 	fmt.Println("pointer")
+
 }
