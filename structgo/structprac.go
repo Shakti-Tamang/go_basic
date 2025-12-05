@@ -74,3 +74,17 @@ func (p Person) NameJob() string {
 
 	return p.Name + p.Job
 }
+
+func (p Person) UserDetails() Person {
+
+	var c Person
+
+	c = Person{Name: "shakti", Age: 12, Salary: 12.45, Job: "he is  java developer", MaritalStatus: true}
+
+	if p.Name == "shakti" {
+
+		return c
+	}
+
+	return c
+}
