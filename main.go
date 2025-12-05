@@ -205,6 +205,8 @@ func main() {
 	structgo.GetAll()
 
 	pointerprac.GetPointerValue()
+
+	pointerprac.GetSlicePointer()
 }
 
 func details() {

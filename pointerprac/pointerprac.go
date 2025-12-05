@@ -17,7 +17,7 @@ var (
 
 	b *int
 
-	c []*int
+	ptr *[]int
 )
 
 func GetPointerValue() {
@@ -37,5 +37,14 @@ func GetPointerValue() {
 	fmt.Println(c)
 
 	fmt.Println("pointer")
+
+}
+
+func GetSlicePointer() {
+	a := []int{1, 2, 3}
+
+	ptr = &a
+
+	fmt.Println(*ptr)
 
 }
