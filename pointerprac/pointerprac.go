@@ -45,6 +45,9 @@ func GetSlicePointer() {
 
 	ptr = &a
 
+	// chnaging pointer slice value
+	(*ptr)[0] = 100
+
 	fmt.Println(*ptr)
 
 }
