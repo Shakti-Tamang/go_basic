@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"goprac/array"
+	"goprac/pointerprac"
 	"goprac/pracstring"
 	"goprac/structgo"
 	"strings"
@@ -173,7 +174,7 @@ func main() {
 
 	structgo.StructSimple()
 	p := structgo.Person{
-		Name:          "Alice",
+		Name:          "shakti",
 		Age:           25,
 		Salary:        5000,
 		Job:           "Developer",
@@ -184,8 +185,14 @@ func main() {
 
 	pracstring.StringPrac()
 
-	fmt.Println(p.UserDetails())
+	fmt.Println(p.UserDetails().Age)
+	s := p.UserDetails()
 
+	fmt.Println(*s)
+
+	structgo.GetAll()
+
+	pointerprac.GetPointerValue()
 }
 
 func details() {
