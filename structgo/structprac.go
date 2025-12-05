@@ -1,6 +1,9 @@
 package structgo
 
-import "fmt"
+import (
+	"errors"
+	"fmt"
+)
 
 // In Go, a struct (short for structure) is a user-defined type that groups together fields (variables) of potentially different data types into a single unit. It is a way to create complex data types that represent real-world entities.
 
@@ -75,7 +78,7 @@ func (p Person) NameJob() string {
 	return p.Name + p.Job
 }
 
-func (p Person) UserDetails() *Person {
+func (p *Person) UserDetails() (*Person, error) {
 
 	var c Person
 
@@ -83,10 +86,12 @@ func (p Person) UserDetails() *Person {
 
 	if p.Name == "shakti" {
 
-		return &c
+		p = &c
+
+		return p, nil
 	}
 
-	return nil
+	return nil, errors.New("person name is not shakti")
 
 	// 	Summary Table (with examples)
 	// Type	Example declared as nil

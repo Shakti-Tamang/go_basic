@@ -185,8 +185,20 @@ func main() {
 
 	pracstring.StringPrac()
 
-	fmt.Println(p.UserDetails().Age)
-	s := p.UserDetails()
+	// fmt.Println(p.UserDetails().Age)
+
+	// Some Go versions may reject this, or tools like gofmt enforce the first style.
+
+	// given fucntion is returning both error and the pointer value so must return the both
+	s, err := p.UserDetails()
+
+	if err != nil {
+		fmt.Println("error is", err)
+	} else {
+
+		fmt.Println("Person Details:", *s)
+		fmt.Println("Person Age:", s.Age)
+	}
 
 	fmt.Println(*s)
 
