@@ -48,11 +48,13 @@ func GetSlicePointer() {
 	// chnaging pointer slice value
 	(*ptr)[0] = 100
 
-	fmt.Println(*ptr)
+	fmt.Println((*ptr)[0])
 
 }
 
 func DoubleSlice(s *[]int) {
+
+	fmt.Println("slice pointer")
 	*s = append(*s, *s...)
 
 }

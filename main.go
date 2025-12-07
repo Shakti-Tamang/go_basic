@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"goprac/array"
+	"goprac/mapprac"
 	"goprac/pointerprac"
 	"goprac/pracstring"
 	"goprac/structgo"
@@ -207,6 +208,10 @@ func main() {
 	pointerprac.GetPointerValue()
 
 	pointerprac.GetSlicePointer()
+
+	mapprac.MapPrac()
+
+	mapprac.MapPrac()
 }
 
 func details() {
