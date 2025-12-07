@@ -51,3 +51,8 @@ func GetSlicePointer() {
 	fmt.Println(*ptr)
 
 }
+
+func DoubleSlice(s *[]int) {
+	*s = append(*s, *s...)
+
+}
