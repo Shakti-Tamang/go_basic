@@ -1,20 +1,26 @@
 package interfaceprac
 
-type shape interface {
-	Area(a float32, b float32) float32
+type Shape interface {
+	Area() float32
 
-	Peremeter(a float32, b float32) float32
+	Peremeter() float32
 }
 
-func Area(a float32, b float32) float32 {
+type Parameter struct {
+	Length float32
 
-	area := a * b
+	Breadth float32
+}
+
+func (p Parameter) Area() float32 {
+
+	area := p.Length * p.Breadth
 	return area
 }
 
-func Peremeter(a float32, b float32) float32 {
+func (p Parameter) Peremeter() float32 {
 
-	peri := 2 * (a + b)
+	peri := 2 * (p.Length + p.Breadth)
 
 	return peri
 }

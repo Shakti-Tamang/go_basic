@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"goprac/array"
+	"goprac/interfaceprac"
 	"goprac/mapprac"
 	"goprac/pointerprac"
 	"goprac/pracstring"
@@ -212,6 +213,15 @@ func main() {
 	mapprac.MapPrac()
 
 	mapprac.MapPrac()
+
+	var sh interfaceprac.Shape
+
+	sh = interfaceprac.Parameter{Length: 2, Breadth: 5}
+
+	fmt.Println("Area", sh.Area())
+
+	fmt.Println("parameter", sh.Peremeter())
+
 }
 
 func details() {
