@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"goprac/array"
+	"goprac/errorhandling"
 	"goprac/interfaceprac"
 	"goprac/mapprac"
 	"goprac/pointerprac"
@@ -221,6 +222,18 @@ func main() {
 	fmt.Println("Area", sh.Area())
 
 	fmt.Println("parameter", sh.Peremeter())
+
+	errorhandling.GetError()
+
+	result, eror := errorhandling.DoSomething()
+
+	if eror != nil {
+
+		fmt.Println("error is ", eror)
+
+	}
+
+	fmt.Println(result)
 
 }
 
