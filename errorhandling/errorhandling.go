@@ -5,6 +5,12 @@ import (
 	"fmt"
 )
 
+type Response struct {
+	Message string
+
+	Code int
+}
+
 func GetError() {
 
 	fmt.Println("hlo world")
