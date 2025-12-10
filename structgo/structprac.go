@@ -73,6 +73,7 @@ func StructSimple() {
 
 // Functions can be associated with a struct type, becoming "methods" of that struct. This allows structs to have behavior in addition to data.
 
+// Receivers are used to define methods on a struct.
 func (p Person) NameJob() string {
 
 	return p.Name + p.Job

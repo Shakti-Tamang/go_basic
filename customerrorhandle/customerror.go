@@ -1,5 +1,12 @@
 package customerrorhandle
 
+// Structs → replace classes
+
+// Composition → replaces inheritance
+
+// Interfaces → provide polymorphism
+
+// Methods → attach behavior to structs
 import (
 	"errors"
 	"fmt"
@@ -18,3 +25,11 @@ func (e *Message) Error() string {
 }
 
 var ErrorNotFound = errors.New("Item Not Found")
+
+// func FindItem(num int) (string, error) {
+
+// 	if num == 0 {
+
+// 		return
+// 	}
+// }
