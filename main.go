@@ -10,6 +10,7 @@ import (
 	"goprac/mapprac"
 	"goprac/pointerprac"
 	"goprac/pracstring"
+	"goprac/receiverfucntion"
 	"goprac/structgo"
 	"strings"
 )
@@ -251,6 +252,14 @@ func main() {
 	}
 
 	fmt.Print("founds", items)
+
+	var a *receiverfucntion.UserDetails
+
+	usecase := receiverfucntion.UserDetails{Name: "shakti", Age: 12, Salary: 12211212.435454545}
+
+	a = &usecase
+
+	receiverfucntion.GetUsers(a)
 
 }
 
