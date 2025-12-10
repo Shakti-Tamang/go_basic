@@ -1,8 +1,10 @@
 package main
 
 import (
+	"errors"
 	"fmt"
 	"goprac/array"
+	"goprac/customerrorhandle"
 	"goprac/errorhandling"
 	"goprac/interfaceprac"
 	"goprac/mapprac"
@@ -234,6 +236,21 @@ func main() {
 	}
 
 	fmt.Println(result)
+
+	fmt.Println("error for custom")
+	items, err := customerrorhandle.FindItem(0)
+
+	if err != nil {
+
+		var myerror *customerrorhandle.Message
+
+		if errors.As(err, &myerror) {
+			fmt.Printf("Caught custom error: %s (Code: %d)\n", myerror.Messages, myerror.Code)
+		}
+
+	}
+
+	fmt.Print(items)
 
 }
 

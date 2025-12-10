@@ -26,10 +26,18 @@ func (e *Message) Error() string {
 
 var ErrorNotFound = errors.New("Item Not Found")
 
-// func FindItem(num int) (string, error) {
+func FindItem(num int) (string, error) {
 
-// 	if num == 0 {
+	if num == 0 {
 
-// 		return
-// 	}
-// }
+		return "", &Message{Messages: "Invalid ", Code: 100}
+	}
+
+	if num == 1 {
+
+		return "", ErrorNotFound
+
+	}
+
+	return "Found item", nil
+}
