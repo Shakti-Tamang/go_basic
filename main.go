@@ -260,6 +260,10 @@ func main() {
 	a = &usecase
 	receiverfucntion.GetUsers(a)
 
+	usecase.UserCustom()
+
+	fmt.Println("data", usecase.Age, usecase.Name, usecase.Salary)
+
 }
 
 func details() {
